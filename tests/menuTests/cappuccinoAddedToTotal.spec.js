@@ -9,6 +9,6 @@ test('Check Cappuccino cost is added to Total on menu page', async ({
   await menuPage.clickCappucinoCup();
 
   await menuPage.assertTotalCheckoutContainsValue(
-    totalPriceFormatStr(COFFEE_PRICES.cappuccino)
+    totalPriceFormatStr(COFFEE_PRICES.cappuccino, 1)
   );
 });
