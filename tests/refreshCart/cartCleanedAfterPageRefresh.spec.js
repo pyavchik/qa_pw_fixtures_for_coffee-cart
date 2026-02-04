@@ -1,6 +1,7 @@
 import { test } from '../fixtures/fixtures.js';
 
-test('Assert cart cleaned after page refresh', async ({ menuPage, cartPage }) => {
+test('Assert cart cleaned after page refresh',
+  async ({ menuPage, cartPage }) => {
   await menuPage.open();
   await menuPage.clickCappucinoCup();
   await menuPage.clickEspressoCup();
